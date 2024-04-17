@@ -4,23 +4,21 @@ variable "aws_region" {
   default     = "us-west-1"
 }
 
-## Logged in VIA AWS CLI ##
+ variable "aws_access_key" {
+   description = "AWS Access Key ID for the target AWS account"
+   type        = string
+ }
 
-# variable "aws_access_key" {
-#   description = "AWS Access Key ID for the target AWS account"
-#   type        = string
-# }
+ variable "aws_secret_key" {
+   description = "AWS Secret Key for the target AWS account"
+   type        = string
+ }
 
-# variable "aws_secret_key" {
-#   description = "AWS Secret Key for the target AWS account"
-#   type        = string
-# }
-
-# variable "aws_session_token" {
-#   description = "AWS Session Token for the target AWS account. Required only if authenticating using temporary credentials"
-#   type        = string
-#   default     = ""
-# }
+ variable "aws_session_token" {
+   description = "AWS Session Token for the target AWS account. Required only if authenticating using temporary credentials"
+   type        = string
+   default     = ""
+ }
 
 variable "availability_zone" {
   description = "AWS availability zone for subnets"
