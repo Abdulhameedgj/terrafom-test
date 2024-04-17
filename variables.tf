@@ -24,6 +24,7 @@ variable "aws_region" {
 
 variable "availability_zone" {
   description = "AWS availability zone for subnets"
+  default     = "us-west-1b"
 }
 
 variable "vpc_cidr" {
